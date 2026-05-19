@@ -1,0 +1,15 @@
+Controle:
+    cima
+    baixo
+    esq
+    dir
+;
+
+
+Jogador:
+    - Controle(controle.h);
+    - Arma(arma.h);
+    - Acessório(acessório.h) // Pensei em ser uma pedra ou lança, algo parecido;
+    - Fisico(...) //Dimensões do Sprite do personagem;
+
+    

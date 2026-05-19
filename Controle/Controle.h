@@ -1,0 +1,2 @@
+#ifndef CONTROLE.h
+#CONTROLE.h
