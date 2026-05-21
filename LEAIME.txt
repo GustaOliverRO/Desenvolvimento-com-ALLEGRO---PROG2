@@ -13,3 +13,27 @@ Jogador:
     - Fisico(...) //Dimensões do Sprite do personagem;
 
     
+
+
+
+
+ 1. Input -> Leitura do Teclado, Mouse e Joystick;
+
+2. Update -> Calcular nova posição com base nas atualizações da leitura, ou seja, posição nova de cada personagem, aplicar a gravidade, verificar colisões, atualizar animações;
+
+3. Draw -> Limpa a tela, desenha o cenário, desenha o persoagem com suas atualizações e mostraa tela para o jogador.;
+
+O que devo me preocupar: 
+ - Física e Movimento:-> Implementar velocidade e ações semelhantes;
+ - Colísão:-> Preciso saber se um retângulo (o jogador) colidiu com o outro, sendo ele o chão o outra coisa qualquer;
+- Animação:-> Responsavél pela gerencia da troca de imagem do personagem;
+
+- Gerenciamento do Mapa:-> onde está as plataformas ? Lido de uma arquivo texto ou matrix de processo;
+
+Divisão lógicas de Estruturas;
+
+-> Core.h (Resposável por inicializar a Allegro, criar o display, a fila de eventos, o timer e gerenciar o Game Loop principal); 
+->Player.h (Onde fica a struct player, Deve conter as referêcias de posição, pares (x,y), velocidade Vx e Vy, largura, altura, estado atual(parado, pulando caindo));
+->Pshysics.h (Funções de aplicação de gravidade, colisão, entre os retangulos do jogador e os blocos do mapa);
+->Graphics.h (Funções auxiliares de tratamento de dados, a exemplo de carregar imagens, gerenciar os Sprites Sheets e controlar qual "quadro" da animação deve ser desenhado no momento);
+
