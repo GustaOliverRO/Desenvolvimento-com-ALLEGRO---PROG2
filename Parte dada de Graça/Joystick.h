@@ -6,7 +6,7 @@ typedef struct {																													//Definição da estrutura de um co
 	unsigned char left;																												//Botão de movimentação à esquerda 
 	unsigned char up;																												//Botão de movimentação para cima 
 	unsigned char down;																												//Botão de disparo																											//Botão de movimentação para baixo 
-	//unsigned char fire;
+    unsigned char fire;
 } joystick;																															//Definição do nome da estrutura 
 
 joystick* joystick_create();																										//Protótipo da função de criação de um controle 
